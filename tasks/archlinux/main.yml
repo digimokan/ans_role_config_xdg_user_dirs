@@ -1,0 +1,18 @@
+- name: "Install xdg-user-dirs package"
+  pacman:
+    name: xdg-user-dirs
+    state: present
+  become: true
+  become_user: root
+
+- name: "Check that main xdg-user-config file exists for user '{{ user_name }}'"
+  ansible.builtin.stat:
+    path: "/home/{{ user_name }}/.config/user-dirs.dirs"
+  register: main_xdg_config_stat
+
+- name: "Configure xdg-user-dirs for user '{{ user_name }}'"
+  ansible.builtin.command: xdg-user-dirs-update
+  become: true
+  become_user: "{{ user_name }}"
+  when: not main_xdg_config_stat.stat.exists
+
