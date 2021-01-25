@@ -53,7 +53,7 @@ for a user.
    - hosts: localhost
      connection: local
      tasks:
-       - name: "Create and configure XDG User Dirs for user2"
+       - name: "Create and configure XDG User Dirs for 'user2'"
          ansible.builtin.include_role:
            name: ans_role_config_xdg_user_dirs
          vars:
@@ -61,10 +61,6 @@ for a user.
    ```
 
 ## Role Options
-
-See the role `defaults` file, for overridable vars:
-
-  * [defaults/main.yml](../defaults/main.yml)
 
 Define these _required_ vars for the role:
 
