@@ -20,7 +20,7 @@ for a user.
 
 * Create the traditional XDG User Directories ('Documents', 'Pictures,
   'Desktop', etc) for a user.
-* Configure the settings-files that many applications look for to access the
+* Configure the XDG settings files that many applications look for to access the
   XDG User Directories.
 
 ## Supported Operating Systems
