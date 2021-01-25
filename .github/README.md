@@ -54,7 +54,7 @@ for a user.
      connection: local
      tasks:
        - name: "Create and configure XDG User Dirs for user2"
-         include_role:
+         ansible.builtin.include_role:
            name: ans_role_config_xdg_user_dirs
          vars:
            user_name: "user2"
