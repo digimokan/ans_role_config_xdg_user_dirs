@@ -1,5 +1,5 @@
 - name: "Install xdg-user-dirs package"
-  pacman:
+  community.general.pacman:
     name: xdg-user-dirs
     state: present
   become: true
