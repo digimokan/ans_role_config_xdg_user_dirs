@@ -5,7 +5,7 @@ Create and configure
 for a user.
 
 [![Release](https://img.shields.io/github/release/digimokan/ans_role_config_xdg_user_dirs.svg?label=release)](https://github.com/digimokan/ans_role_config_xdg_user_dirs/releases/latest "Latest Release Notes")
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?label=license)](LICENSE.txt "Project License")
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?label=license)](LICENSE.md "Project License")
 
 ## Table Of Contents
 
